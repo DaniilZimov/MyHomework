@@ -18,13 +18,13 @@ public class FirstTvnTest {
         WebDriver browserWindow = new ChromeDriver();
         browserWindow.get("http://tvnet.lv");
 
-        WebDriverWait wait = new WebDriverWait(browserWindow, 10 );
-        WebDriverWait mail = new WebDriverWait(browserWindow,60, 2000);
-        wait.until(ExpectedConditions.presenceOfElementLocated(ACCEPT_COOKIES_BTN)) ;
+        WebDriverWait wait = new WebDriverWait(browserWindow, 10);
+        WebDriverWait mail = new WebDriverWait(browserWindow, 60, 2000);
+        wait.until(ExpectedConditions.presenceOfElementLocated(ACCEPT_COOKIES_BTN));
 
 //       WebElement acceptBtn = browserWindow.findElement(ACCEPT_COOKIES_BTN);
 //       acceptBtn.click();
 
-       browserWindow.findElement(ACCEPT_COOKIES_BTN).click();
+        browserWindow.findElement(ACCEPT_COOKIES_BTN).click();
     }
 }
